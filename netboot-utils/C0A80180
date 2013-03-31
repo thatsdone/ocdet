@@ -1,0 +1,8 @@
+prompt 1
+default linux
+timeout 30
+#
+Label linux
+	kernel vmlinuz-2.6.32-131.0.15.el6.x86_64
+	append initrd=initramfs-2.6.32-131.0.15.el6.nttdata1.x86_64.img root=nfs:192.168.1.1:/tftpboot/host128 rw security="" selinux=0 crashkernel=auto
+
